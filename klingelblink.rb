@@ -46,7 +46,7 @@ get "/" do
   "Klingelblinkserver is running.\n\nUse 'GET /klingelblink' to activate.\n"
 end
 
-get "/klingelblink" do
+post "/klingelblink" do
   klingelblink
   "Klingelblinking!\n"
 end
