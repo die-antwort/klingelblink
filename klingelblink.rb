@@ -43,12 +43,12 @@ configure :production do
 end
 
 get "/" do
-  "Klingelblinkserver is running.\n\nUse 'GET /klingelblink' to activate.\n"
+  erb :index
 end
 
 post "/klingelblink" do
   klingelblink
-  "Klingelblinking!\n"
+  erb :klingelblink
 end
 
 
