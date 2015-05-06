@@ -31,7 +31,7 @@ def klingelblink
   end
 end
 
-configure do
+configure :production do
   set :port, 80
 end
 
